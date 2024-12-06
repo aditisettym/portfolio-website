@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/915e7cb5e4.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images\logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi , I'm <span>Aditi Setty M</span> <br>from India</h1>
+            </div>
+        </div>
+    </div>
+<!---------------------about------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images\about.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I'm a Passionate Computer Science student eager to grow in software development 
+                        and machine learning. I enjoy problem-solving and have a curious mindset, actively 
+                        exploring areas like AI,web development.While I’m still learning, I’m committed to building a strong foundation through hands-on projects, hackathons, and continuous improvement. Enthusiastic about contributing to impactful projects while expanding my technical 
+                        skills and knowledge
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul> 
+                            <li><span>Technical Skills</span><br>DSA , Linear algebra , OpenCV , TensorFLow , Mediapipe</li>
+                            <li><span>Soft Skills</span><br>Communication, Teamwork, Problem-Solving, Adaptability</li>
+                            <li><span>Comp Languages</span><br>Python, C , Java , HTML , CSS</li>
+                            <li><span>Languages</span><br>English , Kannada , Hindi</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="achievements">
+                        <ul> 
+                            <li>- Participated in a 24hr National Level Hackathon “amBITion’24” in the domain WEB3/blockchain , orga
+                                nized by Bangalore Institute of Technology</li>
+                            <li>- 4th Semester CSE topper at RVITM</li>
+                            <li>- Completed a course on ”Linear Algebra through geometry” by IISc Bangalore in the NPTEL Swayam portal
+                                with a consolidated score of 70</li>
+                            <li>- Completed a course on ”Strategy and Leadership for Career Development” conducted by IISc</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul> 
+                            <li><span>2022 - Present</span><br>BE CSE from RV Institute of Technology and Management</li>
+                            <li><span>2020 - 2022</span><br>Grade 12 from BASE PU College</li>
+                            <li><span>2017 - 2020</span><br>Grade 10 from National Public School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!---------------------Projects-------------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projectlist">
+            <div class="project">
+                <img src="images/proj-1.jpg">
+                <div class="layer">
+                    <h3>ISL translator</h3>
+                    <p>AI tool that convets Indian Sign Language Gestures to Text</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="images/proj-2.jpg">
+                <div class="layer">
+                    <h3> Metro-ticketing-system</h3>
+                    <p> A menu-driven metro ticketing platform inspired by Bangalore’s Namma Metro system, using
+                        singly linked lists </p>
+                    <a href="https://github.com/aditisettym/metro-ticketing-system.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="images/proj-3.jpg">
+                <div class="layer">
+                    <h3>Currency– Converter</h3>
+                    <p> An interactive currency converter application using Object-Oriented Programming principles
+                        and Java Swing components</p>
+                    <a href="https://github.com/aditisettym/currency-converter.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+
+    </div>
+</div>
+
+<!-------------------contact--------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>aditisettym18@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9663342206</p>
+                <div class="social-icons">
+                    <a href="https://github.com/aditisettym"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aditism18"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright @ aditisettym</p>
+    </div>
+</div>
+    
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
